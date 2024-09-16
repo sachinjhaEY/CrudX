@@ -3,8 +3,8 @@ const catchAsync = require("./../utils/catchAsync");
 
 // OpenAI API Configuration
 const configuration = new OpenAIApi({
-  apiKey:
-    "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",
+  // apiKey:
+  //   "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",
 });
 const openai = new OpenAIApi(configuration);
 
