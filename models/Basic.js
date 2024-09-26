@@ -3,15 +3,15 @@ const mongoose = require("mongoose");
 const basicSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true,
+    //required: true,
   },
   dob: {
     type: Date,
-    required: true,
+    //required: true,
   },
   email: {
     type: String,
-    required: true,
+    //required: true,
     unique: true,
     match: [
       /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
@@ -21,11 +21,11 @@ const basicSchema = new mongoose.Schema({
   gender: {
     type: String,
     enum: ["male", "female"],
-    required: true,
+    //required: true,
   },
   contactNo: {
     type: String,
-    required: true,
+    //required: true,
     match: [/^\d{10}$/, "Please fill a valid contact number"],
   },
 });
